@@ -15,13 +15,22 @@
          <url-pattern>/first</url-pattern>
      </servlet-mapping>
      <servlet>
-    <servlet-name>j2s_servlet</servlet-name>
-    <servlet-class>sj.J2S_Servlet</servlet-class>
-</servlet>
-<servlet-mapping>
-    <servlet-name>j2s_servlet</servlet-name>
-    <url-pattern>/j2s</url-pattern>
-</servlet-mapping>
+     <servlet-name>j2s_servlet</servlet-name>
+     <servlet-class>sj.J2S_Servlet</servlet-class>
+	 </servlet>
+	 <servlet-mapping>
+    	<servlet-name>j2s_servlet</servlet-name>
+    	<url-pattern>/j2s</url-pattern>
+	 </servlet-mapping>
+	 <servlet>
+     	<servlet-name>session_servlet</servlet-name>
+     	<servlet-class>sj.SessionServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+    	<servlet-name>session_servlet</servlet-name>
+    	<url-pattern>/session</url-pattern>
+	</servlet-mapping>
+	
 
     <!-- ウェルカムファイルの設定 -->
     <welcome-file-list>
